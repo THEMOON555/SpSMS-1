@@ -30,18 +30,17 @@ a,m,h,k,b,u,c,p,bn,o = [
 
 
 os.system('clear')
-print("""
-Banner = """
+banner = """
 
-                   \033[31m[ WELCOME TO PROGRAM ]
 
-                    \033[31m |-DemoNZxx-|
+                  [ WELCOME TO PROGRAM ]
+
+                       |-DemoNZxx-|
 \033[37m[•]───────────────────────────────────────────[•]
 \033[31m | [X]  Author  : DEMON 		       |
 \033[31m | [X]  TEAM    : XXXXX                        |
 \033[37m[•]───────────────────────────────────────────[•]"""
 
-""")
 
 num=input("[In] \033[31mNumber \033[37m: ")
 jum=int(input("[In] \033[31mAmount \033[37m: "))
